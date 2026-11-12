@@ -1,0 +1,8 @@
+tools/
+export/
+.env*
+.vercel/
+assets/shots/ws-*.png
+assets/shots/lead-*.png
+assets/shots/landing-hero.png
+assets/shots/research-crop.png

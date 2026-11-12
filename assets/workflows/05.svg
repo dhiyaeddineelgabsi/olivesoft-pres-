@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 -8 2484 652" width="2484" height="652">
+<defs>
+<pattern id="dots" x="-120" y="-8" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#2a2a2a"/></pattern>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6b6b6b"/></marker>
+<style>
+.e{fill:none;stroke:#6a6a6a;stroke-width:4}
+.ai{fill:none;stroke:#9d9bff;stroke-width:4;stroke-dasharray:9 7}
+.n{fill:#1d1d1d;stroke:#4a4a4a;stroke-width:3.5}
+.n.trig{stroke:#12d9c8}
+.n.ai{stroke:#9d9bff}
+.g{font:600 26px "Geist Mono",ui-monospace,monospace;fill:#c9c9c9;text-anchor:middle}
+.g.gtrig{fill:#51e9b8}.g.gai{fill:#9d9bff}
+.l{font:500 20px "Geist",ui-sans-serif,system-ui,sans-serif;fill:#9b9b9b;text-anchor:middle}
+</style>
+</defs>
+<rect x="-120" y="-8" width="2484" height="652" fill="#0e0e0e"/>
+<rect x="-120" y="-8" width="2484" height="652" fill="url(#dots)"/>
+<path d="M100,162 C162,162 162,162 218,162" class="e" marker-end="url(#arr)"/><path d="M324,162 C386,162 386,162 442,162" class="e" marker-end="url(#arr)"/><path d="M548,162 C610,162 610,162 666,162" class="e" marker-end="url(#arr)"/><path d="M772,162 C834,162 834,162 890,162" class="e" marker-end="url(#arr)"/><path d="M996,162 C1058,162 1058,162 1114,162" class="e" marker-end="url(#arr)"/><path d="M1220,162 C1348,162 1348,362 1470,362" class="e" marker-end="url(#arr)"/><path d="M1796,162 C1858,162 1858,162 1914,162" class="e" marker-end="url(#arr)"/><path d="M2020,150 C2082,150 2082,162 2138,162" class="e" marker-end="url(#arr)"/><path d="M2020,174 C2606,174 262,402 842,402" class="e" marker-end="url(#arr)"/><path d="M948,402 C1082,402 1082,434 1210,434" class="e" marker-end="url(#arr)"/><path d="M1576,362 C1636,362 1636,162 1690,162" class="e" marker-end="url(#arr)"/>
+<g><path d="M40,112 H90 Q100,112 100,122 V202 Q100,212 90,212 H40 A40 40 0 0 1 0,172 V152 A40 40 0 0 1 40,112 Z" class="n trig"/><text x="50" y="171" class="g gtrig">▶</text><text x="50" y="238" class="l">Called by wf2</text></g><g><rect x="224" y="112" width="100" height="100" rx="10" class="n"/><text x="274" y="171" class="g">{ }</text><text x="274" y="238" class="l">Resolve Lead Id</text></g><g><rect x="448" y="112" width="100" height="100" rx="10" class="n"/><text x="498" y="171" class="g">SQL</text><text x="498" y="238" class="l">Load Lead + Prospect</text></g><g><rect x="672" y="112" width="100" height="100" rx="10" class="n"/><text x="722" y="171" class="g">{ }</text><text x="722" y="238" class="l">Build Requirement Queri…</text></g><g><rect x="896" y="112" width="100" height="100" rx="10" class="n"/><text x="946" y="171" class="g">↳</text><text x="946" y="238" class="l">Search each requirement</text></g><g><rect x="1120" y="112" width="100" height="100" rx="10" class="n"/><text x="1170" y="171" class="g">{ }</text><text x="1170" y="238" class="l">Build assessment context</text></g><g><rect x="1696" y="112" width="100" height="100" rx="10" class="n"/><text x="1746" y="171" class="g">{ }</text><text x="1746" y="238" class="l">Validate and assemble m…</text></g><g><rect x="1920" y="112" width="100" height="100" rx="10" class="n"/><text x="1970" y="171" class="g">SQL</text><text x="1970" y="238" class="l">Persist matrix transact…</text></g><g><rect x="2144" y="112" width="100" height="100" rx="10" class="n"/><text x="2194" y="171" class="g">{ }</text><text x="2194" y="238" class="l">Return matching envelope</text></g><g><rect x="848" y="352" width="100" height="100" rx="10" class="n"/><text x="898" y="411" class="g">{ }</text><text x="898" y="478" class="l">Build Error Payload</text></g><g><rect x="1216" y="384" width="100" height="100" rx="10" class="n"/><text x="1266" y="443" class="g">SQL</text><text x="1266" y="510" class="l">Mark Lead Failed</text></g><g><rect x="1476" y="312" width="100" height="100" rx="10" class="n"/><text x="1526" y="371" class="g">HTTP</text><text x="1526" y="438" class="l">DeepSeek judgment</text></g>
+</svg>
