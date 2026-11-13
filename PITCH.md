@@ -1,6 +1,6 @@
 # OliveBranch · 5-minute pitch (one speaker)
 
-Deck: `index.html` (press **N** during the talk to see these lines as speaker notes; they are the same words). `(click)` marks a click that reveals the next element on the slide. About 555 words: **4:20** at a calm 130 words per minute with the clicks, which leaves 40 seconds of margin in a 5-minute slot.
+Deck: `index.html` (press **N** during the talk to see these lines as speaker notes; they are the same words). `(click)` marks a click that reveals the next element on the slide. About 560 words: **4:25** at a calm 130 words per minute with the clicks, which leaves 35 seconds of margin in a 5-minute slot.
 
 The 2-minute demo video is shown separately, outside the deck. The demo slide is kept as an HTML comment in `index.html` if it needs to come back.
 
@@ -12,13 +12,14 @@ The 2-minute demo video is shown separately, outside the deck. The demo slide is
 | 4 | The architecture | 0:20 | 1:10 |
 | 5 | The n8n workflow | 0:25 | 1:35 |
 | 6 | Collecting tenders | 0:30 | 2:05 |
-| 7 | Comparing with our knowledge base (RAG) | 0:50 | 2:55 |
-| 8 | Generating the presentation | 0:25 | 3:20 |
-| 9 | Editing in Canva | 0:25 | 3:45 |
-| 10 | Security | 0:20 | 4:05 |
-| 11 | Next steps and thank you | 0:15 | 4:20 |
+| 7 | Comparing with our knowledge base (RAG) | 0:30 | 2:35 |
+| 8 | Does it work? We measured it | 0:25 | 3:00 |
+| 9 | Generating the presentation | 0:25 | 3:25 |
+| 10 | Editing in Canva | 0:25 | 3:50 |
+| 11 | Security | 0:20 | 4:10 |
+| 12 | Next steps and thank you | 0:15 | 4:25 |
 
-**If time is cut (about 3 minutes):** skip slide 4 (architecture), say only the first sentence of slide 5, and drop the last two sentences of slide 7.
+**If time is cut (about 3 minutes):** skip slide 4 (architecture), say only the first sentence of slide 5, and on slide 8 keep only the two numbers.
 
 ## The pitch
 
@@ -40,19 +41,22 @@ n8n is the heart of the system: twenty-nine workflows. This one is the job runne
 **6 · Collecting tenders (0:30)**
 Every morning at six, this workflow scans four official sources: TED and BOAMP through their APIs, Find a Tender in the UK through OCDS, and HAICOP in Tunisia, from its public pages. An LLM extracts the requirements, with one rule. *(click)* Each requirement needs an exact quote from the notice, or it is dropped.
 
-**7 · Comparing with our knowledge base, RAG (0:50)**
-Then the matching, with RAG over our own knowledge. Each document, a CV, a project, a tech stack, is extracted, chunked, turned into Gemini vectors and stored in Qdrant. For each requirement we retrieve the top five passages, and an LLM judges it, always with the quote that proves it. *(click)* Here, "Data Scientist role" is supported, with the exact line from the CV. *(click)* And here is the evaluation stored in our database: 35 questions, 35 hits. *(click)* The result: on 35 questions, the right document is always in the top five. On 24 requirements from labelled tenders, twenty are judged correctly, that is 83 percent. And with no evidence, it says unknown. It never invents a qualification.
+**7 · Comparing with our knowledge base, RAG (0:30)**
+Then the matching, with RAG over our own knowledge. Each document, a CV, a project, a tech stack, is extracted, chunked, turned into Gemini vectors and stored in Qdrant. For each requirement we retrieve the top five passages, and an LLM judges it, always with the quote that proves it. *(click)* Here, "Data Scientist role" is supported, with the exact line from the CV.
 
-**8 · Generating the presentation (0:25)**
+**8 · Does it work? We measured it (0:25)**
+Does it work? We measured it. Here is the evaluation stored in our database: 35 questions, 35 hits. *(click)* The right document is always in the top five. Twenty of 24 requirements are judged correctly, that is 83 percent. With no evidence, it says unknown: it never invents a qualification.
+
+**9 · Generating the presentation (0:25)**
 When the team accepts an opportunity, two AI agents take over: a strategist plans the proposal, and a writer drafts it. Every claim is checked against its source. The renderer then produces an editable PowerPoint and a PDF. Anything we cannot prove becomes a yellow field for the team to complete.
 
-**9 · Editing in Canva (0:25)**
+**10 · Editing in Canva (0:25)**
 For the final polish, one click on "Modifier dans Canva" opens the deck in the editor the team already knows. *(click)* The team edits it there. *(click)* One click brings the changes back as a new version. *(click)* Files stay private, old versions are kept, and the compliance review is flagged to be redone.
 
-**10 · Security (0:20)**
+**11 · Security (0:20)**
 Security was built in from day one. API keys stay on the server, every webhook is protected, Supabase enforces row level security, and files sit in private storage behind sixty-second links. Quotes are verified against their source, so injected text cannot slip into a proposal.
 
-**11 · Next steps and thank you (0:15)**
+**12 · Next steps and thank you (0:15)**
 Next: OCR for scanned PDFs, individual accounts with roles, an evaluation on OliveSoft's real CVs, and monitoring with alerts. *(click)* Thank you. We are happy to take your questions.
 
 ## Captures
@@ -64,10 +68,10 @@ One picture per slide. Drop each capture into `assets/captures/` named after its
 | N1 | 5 | n8n canvas of `07_job_runner` (zoom to fit, no minimap) | drawn from the workflow export |
 | N4 | 6 | n8n canvas of `14_opportunity_scan` (4 sources visible) | drawn from the workflow export |
 | A2 | 7 | Requirement matrix with the CV quote | live app capture, already in place |
-| S2 | 7 | Supabase `rag_evaluation_runs` (35 of 35, run 19385 highlighted) | already in place |
-| F1 | 8 | A generated PPTX slide in PowerPoint, **with a yellow field** | cover of the generated PDF |
+| S2 | 8 | Supabase `rag_evaluation_runs` (35 of 35, run 19385 highlighted) | already in place |
+| F1 | 9 | A generated PPTX slide in PowerPoint, **with a yellow field** | cover of the generated PDF |
 
-Slides 1–4, 10 and 11 have no screenshot.
+Slides 1–4 and 10–12 have no screenshot.
 
 Logos: drop `assets/logos/<name>.svg` (or .png) with these names and they replace the monograms: `ted`, `boamp`, `find-a-tender`, `haicop`, `nextjs`, `n8n`, `supabase`, `qdrant`, `gemini`, `deepseek`, `tavily`, `canva`.
 

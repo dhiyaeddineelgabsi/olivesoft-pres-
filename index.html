@@ -146,24 +146,32 @@
     <div class="capstack a2" style="left:142px;top:352px;width:1380px;height:440px" data-step="1" data-in-style="left">
       <figure class="cap" data-cap="A2" data-fallback="assets/shots/A2-requirements-card.png" data-label="Requirement matrix"><div class="media"><img alt="OliveBranch requirement matrix with a supported requirement and its CV quote"></div><figcaption><span class="caption-4">Requirement matrix · quote from the CV</span><b>OliveBranch</b></figcaption></figure>
     </div>
-    <div class="capstack s2" style="left:382px;top:350px;width:900px;height:456px" data-step="2" data-in-style="left">
+  </div>
+  <aside class="notes">[0:30] Then the matching, with RAG over our own knowledge. Each document, a CV, a project, a tech stack, is extracted, chunked, turned into Gemini vectors and stored in Qdrant. For each requirement we retrieve the top five passages, and an LLM judges it, always with the quote that proves it. (click) Here, "Data Scientist role" is supported, with the exact line from the CV.</aside>
+</section>
+
+<!-- 08 · Does it work? (0:25) ------------------------------------------ -->
+<section class="slide" id="p-eval" data-title="Does it work? We measured it" data-field='{"shape":"drift","alpha":0.32}'>
+  <div class="inner">
+    <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">07</span></span><h2 class="heading-1 split">Does it work? We measured it</h2></div>
+    <div class="capstack s2" style="left:257px;top:200px;width:1150px;height:560px" data-in="right">
       <figure class="cap" data-cap="S2" data-label="Evaluation runs"><div class="media"><img alt="Supabase table rag_evaluation_runs: 35 hits out of 35 labelled queries"></div><figcaption><span class="caption-4">rag_evaluation_runs · 35 hits out of 35 queries</span><b>Supabase</b></figcaption></figure>
     </div>
     <div class="stats">
-      <div class="stat glass" data-step="3" data-in-style="scale"><b class="grad">35 / 35</b><span>Right document found in the top 5 results</span><small>Run 19385 · rag_evaluation_runs</small></div>
-      <div class="stat glass" data-step="3" data-in-style="scale"><b>20 / 24</b><span>Requirements judged correctly (83%)</span><small>Run 19301 · benchmark, 20 Oct</small></div>
-      <div class="stat glass" data-step="3" data-in-style="scale"><b class="mint">Unknown</b><span>No evidence? It says so. It never invents a qualification.</span><small>761 of 1,330 judged unknown or unsupported</small></div>
+      <div class="stat glass" data-step="1" data-in-style="scale"><b class="grad">35 / 35</b><span>Right document found in the top 5 results</span><small>Run 19385 · rag_evaluation_runs</small></div>
+      <div class="stat glass" data-step="1" data-in-style="scale"><b>20 / 24</b><span>Requirements judged correctly (83%)</span><small>Run 19301 · benchmark, 20 Oct</small></div>
+      <div class="stat glass" data-step="1" data-in-style="scale"><b class="mint">Unknown</b><span>No evidence? It says so. It never invents a qualification.</span><small>761 of 1,330 judged unknown or unsupported</small></div>
     </div>
-    <p class="stats-note body-2 muted" data-step="3" data-in-style="fade">Tested on 35 queries · 3 labelled tenders · 24 requirements</p>
+    <p class="stats-note body-2 muted" data-step="1" data-in-style="fade">Tested on 35 queries · 3 labelled tenders · 24 requirements</p>
   </div>
-  <aside class="notes">[0:45] Then the matching, with RAG over our own knowledge. Each document, a CV, a project, a tech stack, is extracted, chunked, turned into Gemini vectors and stored in Qdrant. For each requirement we retrieve the top five passages, and an LLM judges it, always with the quote that proves it. (click) Here, "Data Scientist role" is supported, with the exact line from the CV. (click) And here is the evaluation stored in our database: 35 questions, 35 hits. (click) The result: on 35 questions, the right document is always in the top five. On 24 requirements from labelled tenders, twenty are judged correctly, that is 83 percent. And with no evidence, it says unknown. It never invents a qualification.</aside>
+  <aside class="notes">[0:25] Does it work? We measured it. Here is the evaluation stored in our database: 35 questions, 35 hits. (click) The right document is always in the top five. Twenty of 24 requirements are judged correctly, that is 83 percent. With no evidence, it says unknown: it never invents a qualification.</aside>
 </section>
 
-<!-- 08 · Generating the presentation (0:25) ------------------------------ -->
+<!-- 09 · Generating the presentation (0:25) ------------------------------ -->
 <section class="slide" id="p-gen" data-title="Generating the presentation" data-field='{"shape":"drift","alpha":0.32}'>
   <div class="inner">
     <div class="left">
-      <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">07</span></span><h2 class="heading-1 split">Generating the<br>presentation</h2></div>
+      <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">08</span></span><h2 class="heading-1 split">Generating the<br>presentation</h2></div>
       <div class="kws">
         <div class="kw glass" data-in><span class="icon"><i data-icon="robot"></i></span><div><span class="num grad">2</span> <span class="heading-5">AI agents</span></div></div>
         <div class="kw glass" data-in><span class="icon"><i data-icon="seal-check"></i></span><span class="heading-5">Source validation</span></div>
@@ -177,10 +185,10 @@
   <aside class="notes">[0:25] When the team accepts an opportunity, two AI agents take over: a strategist plans the proposal, and a writer drafts it. Every claim is checked against its source. The renderer then produces an editable PowerPoint and a PDF. Anything we cannot prove becomes a yellow field for the team to complete.</aside>
 </section>
 
-<!-- 09 · Editing in Canva (0:25) ----------------------------------------- -->
+<!-- 10 · Editing in Canva (0:25) ----------------------------------------- -->
 <section class="slide" id="p-canva" data-title="Editing in Canva" data-field='{"shape":"drift","alpha":0.32}'>
   <div class="inner">
-    <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">08</span></span><h2 class="heading-1 split">Editing in Canva</h2></div>
+    <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">09</span></span><h2 class="heading-1 split">Editing in Canva</h2></div>
     <div class="rt">
       <div class="rt-node glass" data-in><span class="orb"><i data-icon="file-ppt"></i></span><b class="heading-3">OliveBranch</b><span class="rt-sub">Generated PPTX + PDF</span><span class="rt-badge" data-step="2" data-in-style="scale"><i data-icon="check-circle"></i>New version</span></div>
       <div class="rt-mid">
@@ -198,10 +206,10 @@
   <aside class="notes">[0:25] For the final polish, one click on "Modifier dans Canva" opens the deck in the editor the team already knows. (click) The team edits it there. (click) One click brings the changes back as a new version. (click) Files stay private, old versions are kept, and the compliance review is flagged to be redone.</aside>
 </section>
 
-<!-- 10 · Security (0:20) ------------------------------------------------- -->
+<!-- 11 · Security (0:20) ------------------------------------------------- -->
 <section class="slide" id="p-security" data-title="Security" data-field='{"shape":"orbit","cx":1328,"cy":540,"r0":180,"r1":420,"squash":0.9,"count":1100}'>
   <div class="inner">
-    <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">09</span></span><h2 class="heading-1 split">Security</h2></div>
+    <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">10</span></span><h2 class="heading-1 split">Security</h2></div>
     <div class="items">
       <div class="it glass" data-in><span class="icon"><i data-icon="key"></i></span><span class="heading-6">Server-side keys only</span></div>
       <div class="it glass" data-in><span class="icon"><i data-icon="webhooks-logo"></i></span><span class="heading-6">Protected webhooks</span></div>
@@ -228,10 +236,10 @@
 </section>
 -->
 
-<!-- 11 · Next steps and thank you (0:15) --------------------------------- -->
+<!-- 12 · Next steps and thank you (0:15) --------------------------------- -->
 <section class="slide" id="p-next" data-title="Next steps and thank you" data-field='{"shape":"mark","cx":1420,"cy":440,"h":520,"count":1200}'>
   <div class="inner">
-    <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">10</span></span><h2 class="heading-1 split">Next steps</h2></div>
+    <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">11</span></span><h2 class="heading-1 split">Next steps</h2></div>
     <div class="pts">
       <div class="pt glass" data-in><span class="n">01</span><span class="heading-6">OCR for scanned PDFs</span></div>
       <div class="pt glass" data-in><span class="n">02</span><span class="heading-6">Individual accounts and roles</span></div>
