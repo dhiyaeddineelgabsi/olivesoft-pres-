@@ -143,16 +143,17 @@
       <div class="dn" style="left:1307px" data-in><span class="orb glass"><i data-icon="list-checks"></i></span><span class="title-3">Top 5</span></div>
       <div class="dn last" style="left:1545px" data-in><span class="orb glass"><i data-icon="seal-check"></i></span><span class="title-3">Judgment + quote</span></div>
     </div>
-    <div class="capstack" style="left:0;top:372px;width:1320px;height:474px" data-step="1" data-in-style="left">
+    <div class="capstack" style="left:142px;top:352px;width:1380px;height:440px" data-step="1" data-in-style="left">
       <figure class="cap" data-cap="A2" data-fallback="assets/shots/A2-requirements-card.png" data-label="Requirement matrix"><div class="media"><img alt="OliveBranch requirement matrix with a supported requirement and its CV quote"></div><figcaption><span class="caption-4">Requirement matrix · quote from the CV</span><b>OliveBranch</b></figcaption></figure>
     </div>
     <div class="stats">
-      <div class="stat glass" data-step="2" data-in-style="right"><span class="title-1">hit@5</span><b class="grad">1.00</b></div>
-      <div class="stat glass" data-step="2" data-in-style="right"><span class="title-1">recall@5</span><b>0.83</b></div>
-      <div class="stat glass" data-step="2" data-in-style="right"><span class="title-1">correct judgments</span><b class="mint"><span data-count="83">83</span>%</b></div>
+      <div class="stat glass" data-step="2" data-in-style="scale"><b class="grad">29 / 29</b><span>Right document found in the top 5 results</span></div>
+      <div class="stat glass" data-step="2" data-in-style="scale"><b>20 / 24</b><span>Requirements judged correctly (83%)</span></div>
+      <div class="stat glass" data-step="2" data-in-style="scale"><b class="mint">Unknown</b><span>No evidence? It says so. It never invents a qualification.</span></div>
     </div>
+    <p class="stats-note body-2 muted" data-step="2" data-in-style="fade">Tested on 29 queries · 3 labelled tenders · 24 requirements</p>
   </div>
-  <aside class="notes">[0:45] Then the matching, with RAG over our own knowledge. Each document, a CV, a project, a tech stack, is extracted, chunked, turned into Gemini vectors and stored in Qdrant. For each requirement we retrieve the top five passages, and an LLM judges it, always with the quote that proves it. (click) Here, "Data Scientist role" is supported, with the exact line from the CV. (click) On our labelled benchmark: hit at five is one, recall at five is zero point eight three, and eighty-three percent of judgments are correct. When evidence is missing, it says unknown. It never invents a qualification.</aside>
+  <aside class="notes">[0:45] Then the matching, with RAG over our own knowledge. Each document, a CV, a project, a tech stack, is extracted, chunked, turned into Gemini vectors and stored in Qdrant. For each requirement we retrieve the top five passages, and an LLM judges it, always with the quote that proves it. (click) Here, "Data Scientist role" is supported, with the exact line from the CV. (click) Then we tested it. On 29 questions, the right document is always in the top five. On 24 requirements from labelled tenders, twenty are judged correctly, that is 83 percent. And with no evidence, it says unknown. It never invents a qualification.</aside>
 </section>
 
 <!-- 08 · Generating the presentation (0:25) ------------------------------ -->

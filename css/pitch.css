@@ -212,3 +212,11 @@
 #p-next .pt .n { width: 72px; height: 72px; border-radius: 18px; font-size: 28px; }
 #p-next .pt .heading-6 { font-size: 34px; line-height: 42px; }
 #p-next .thanks .heading-5 { font-size: 34px; line-height: 42px; }
+
+/* 07 RAG: on the last click the capture steps aside and three plain-language results take its place */
+#p-rag:has(.stat.shown) .capstack { opacity: 0 !important; pointer-events: none; transition: opacity 0.5s var(--ease); }
+#p-rag .stats { left: 0; right: 0; top: 372px; width: auto; flex-direction: row; gap: 24px; }
+#p-rag .stat { flex: 1; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 18px; padding: 40px 36px 44px; border-radius: 32px; min-height: 360px; }
+#p-rag .stat span { font-size: 38px; line-height: 48px; font-weight: 500; color: rgba(255,255,255,0.94); }
+#p-rag .stat b { font-size: 104px; line-height: 110px; }
+#p-rag .stats-note { position: absolute; left: 0; right: 0; top: 770px; text-align: center; font-size: 28px; line-height: 36px; margin: 0; }
