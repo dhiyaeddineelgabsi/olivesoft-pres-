@@ -1,6 +1,6 @@
 # OliveBranch · 5-minute pitch (one speaker)
 
-Deck: `index.html` (press **N** during the talk to see these lines as speaker notes; they are the same words). `(click)` marks a click that reveals the next element on the slide. About 540 words: **4:15** at a calm 130 words per minute with the clicks, which leaves 45 seconds of margin in a 5-minute slot.
+Deck: `index.html` (press **N** during the talk to see these lines as speaker notes; they are the same words). `(click)` marks a click that reveals the next element on the slide. About 555 words: **4:20** at a calm 130 words per minute with the clicks, which leaves 40 seconds of margin in a 5-minute slot.
 
 The 2-minute demo video is shown separately, outside the deck. The demo slide is kept as an HTML comment in `index.html` if it needs to come back.
 
@@ -12,11 +12,11 @@ The 2-minute demo video is shown separately, outside the deck. The demo slide is
 | 4 | The architecture | 0:20 | 1:10 |
 | 5 | The n8n workflow | 0:25 | 1:35 |
 | 6 | Collecting tenders | 0:30 | 2:05 |
-| 7 | Comparing with our knowledge base (RAG) | 0:45 | 2:50 |
-| 8 | Generating the presentation | 0:25 | 3:15 |
-| 9 | Editing in Canva | 0:25 | 3:40 |
-| 10 | Security | 0:20 | 4:00 |
-| 11 | Next steps and thank you | 0:15 | 4:15 |
+| 7 | Comparing with our knowledge base (RAG) | 0:50 | 2:55 |
+| 8 | Generating the presentation | 0:25 | 3:20 |
+| 9 | Editing in Canva | 0:25 | 3:45 |
+| 10 | Security | 0:20 | 4:05 |
+| 11 | Next steps and thank you | 0:15 | 4:20 |
 
 **If time is cut (about 3 minutes):** skip slide 4 (architecture), say only the first sentence of slide 5, and drop the last two sentences of slide 7.
 
@@ -40,8 +40,8 @@ n8n is the heart of the system: twenty-nine workflows. This one is the job runne
 **6 · Collecting tenders (0:30)**
 Every morning at six, this workflow scans four official sources: TED and BOAMP through their APIs, Find a Tender in the UK through OCDS, and HAICOP in Tunisia, from its public pages. An LLM extracts the requirements, with one rule. *(click)* Each requirement needs an exact quote from the notice, or it is dropped.
 
-**7 · Comparing with our knowledge base, RAG (0:45)**
-Then the matching, with RAG over our own knowledge. Each document, a CV, a project, a tech stack, is extracted, chunked, turned into Gemini vectors and stored in Qdrant. For each requirement we retrieve the top five passages, and an LLM judges it, always with the quote that proves it. *(click)* Here, "Data Scientist role" is supported, with the exact line from the CV. *(click)* Then we tested it. On 35 questions, the right document is always in the top five. On 24 requirements from labelled tenders, twenty are judged correctly, that is 83 percent. And with no evidence, it says unknown. It never invents a qualification.
+**7 · Comparing with our knowledge base, RAG (0:50)**
+Then the matching, with RAG over our own knowledge. Each document, a CV, a project, a tech stack, is extracted, chunked, turned into Gemini vectors and stored in Qdrant. For each requirement we retrieve the top five passages, and an LLM judges it, always with the quote that proves it. *(click)* Here, "Data Scientist role" is supported, with the exact line from the CV. *(click)* And here is the evaluation stored in our database: 35 questions, 35 hits. *(click)* The result: on 35 questions, the right document is always in the top five. On 24 requirements from labelled tenders, twenty are judged correctly, that is 83 percent. And with no evidence, it says unknown. It never invents a qualification.
 
 **8 · Generating the presentation (0:25)**
 When the team accepts an opportunity, two AI agents take over: a strategist plans the proposal, and a writer drafts it. Every claim is checked against its source. The renderer then produces an editable PowerPoint and a PDF. Anything we cannot prove becomes a yellow field for the team to complete.
@@ -64,6 +64,7 @@ One picture per slide. Drop each capture into `assets/captures/` named after its
 | N1 | 5 | n8n canvas of `07_job_runner` (zoom to fit, no minimap) | drawn from the workflow export |
 | N4 | 6 | n8n canvas of `14_opportunity_scan` (4 sources visible) | drawn from the workflow export |
 | A2 | 7 | Requirement matrix with the CV quote | live app capture, already in place |
+| S2 | 7 | Supabase `rag_evaluation_runs` (35 of 35, run 19385 highlighted) | already in place |
 | F1 | 8 | A generated PPTX slide in PowerPoint, **with a yellow field** | cover of the generated PDF |
 
 Slides 1–4, 10 and 11 have no screenshot.
