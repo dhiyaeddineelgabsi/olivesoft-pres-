@@ -38,6 +38,12 @@
       if (!r) { f.remove(); console.info(`[deck] capture ${f.dataset.cap} not provided (${f.dataset.label || ""})`); return; }
       const img = f.querySelector("img"); img.src = r.src;
       if (f.dataset.cover !== undefined && !r.real) img.classList.add("cover");
+      /* stand-in shown: switch the caption to describe the stand-in, not the missing capture */
+      if (!r.real && f.dataset.fbCaption) {
+        f.querySelector("figcaption .caption-4").textContent = f.dataset.fbCaption;
+        if (f.dataset.fbTag) f.querySelector("figcaption b").textContent = f.dataset.fbTag;
+        f.dataset.label = f.dataset.fbCaption;
+      }
       kept.push(f);
     });
     if (!kept.length && stack.hasAttribute("data-optional")) { stack.remove(); return; }

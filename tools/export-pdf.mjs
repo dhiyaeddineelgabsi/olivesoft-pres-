@@ -49,8 +49,8 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const html = `<!doctype html><html><head><style>@page{size:1920px 1080px;margin:0}html,body{margin:0;background:#000}img{display:block;width:1920px;height:1080px;page-break-after:always}</style></head><body>${(await Promise.all(pngs.map(async (f) => `<img src="data:image/png;base64,${(await readFile(f)).toString("base64")}">`))).join("")}</body></html>`;
   const pdfPage = await browser.newPage();
   await pdfPage.setContent(html, { waitUntil: "load" });
-  await pdfPage.pdf({ path: path.join(OUT, "OlivesoftBranch-CSTAM3.pdf"), width: "1920px", height: "1080px", printBackground: true });
+  await pdfPage.pdf({ path: path.join(OUT, "OliveBranch-CSTAM3.pdf"), width: "1920px", height: "1080px", printBackground: true });
   await browser.close(); server.close();
   if (errors.length) { console.error("Page errors:\n" + errors.join("\n")); process.exitCode = 1; }
-  console.log("PDF written to", path.join(OUT, "OlivesoftBranch-CSTAM3.pdf"));
+  console.log("PDF written to", path.join(OUT, "OliveBranch-CSTAM3.pdf"));
 }

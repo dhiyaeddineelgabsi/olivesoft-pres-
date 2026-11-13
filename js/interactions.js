@@ -82,7 +82,7 @@
     { x: 820, y: 560, ic2: "books", t: "Match", s: "Workflows 04 and 05 · RAG", d: "Each requirement is judged supported, partial, unsupported or unknown against CVs, projects and stacks, with the quote." },
     { x: 1100, y: 600, ic2: "target", t: "Qualify", s: "Pipeline · fit above 70%", d: "Fit above 70% joins the pipeline on its own. A person reviews the evidence and accepts the opportunity." },
     { x: 1380, y: 560, ic2: "robot", t: "Write", s: "Workflow 19 · strategy and writing agents", d: "Cited proposal content built from the buyer research and the matched internal evidence." },
-    { x: 1660, y: 600, ic2: "presentation-chart", t: "Deliver", s: "Workflow 22 · renderer", d: "An editable PowerPoint and a PDF on the OlivesoftBranch template, ready to download or polish in Canva." },
+    { x: 1660, y: 600, ic2: "presentation-chart", t: "Deliver", s: "Workflow 22 · renderer", d: "An editable PowerPoint and a PDF on the OliveBranch template, ready to download or polish in Canva." },
   ];
   (function () {
     const wrap = $("#s-journey .nodes"); if (!wrap) return;

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OlivesoftBranch · CSTAM 3.0 technical pitch · Intgrale IT</title>
-<meta name="description" content="OlivesoftBranch: from public tender to commercial proposal. Technical pitch deck for CSTAM 3.0 by team Intgrale IT.">
+<title>OliveBranch · CSTAM 3.0 technical pitch · Intégrale IT</title>
+<meta name="description" content="OliveBranch: from public tender to commercial proposal. Technical pitch deck for CSTAM 3.0 by team Intégrale IT.">
 <link rel="icon" href="assets/olivesoft-symbol.svg" type="image/svg+xml">
 <link rel="preload" href="vendor/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/tokens.css">
@@ -21,17 +21,17 @@
 <section class="slide" id="s-title" data-title="Title" data-field='{"shape":"mark","cx":1400,"cy":540,"h":700}'>
   <div class="inner">
     <div class="brandline" data-in><img src="assets/olivesoft-symbol.svg" alt=""><span class="caption-3 muted">CSTAM 3.0</span></div>
-    <h1 class="display-1 split grad-head">OlivesoftBranch</h1>
+    <h1 class="display-1 split grad-head">OliveBranch</h1>
     <p class="heading-3 tagline split">From public tender to <span class="grad">commercial proposal</span></p>
     <div class="meta" data-in>
-      <div><span class="caption-4">Team</span><span class="title-1">Intgrale IT</span></div>
+      <div><span class="caption-4">Team</span><span class="title-1">Intégrale IT</span></div>
       <div><span class="caption-4">Event</span><span class="title-1">CSTAM 3.0</span></div>
     </div>
   </div>
-  <aside class="notes">[0:10] Good morning. We are team Intgrale IT, and this is OlivesoftBranch: it takes a public tender and turns it into a commercial proposal, backed by evidence.</aside>
+  <aside class="notes">[0:10] Good morning. We are team Intégrale IT, and this is OliveBranch: it takes a public tender and turns it into a commercial proposal, backed by evidence.</aside>
 </section>
 
-<!-- 02 · The problem (0:25) ---------------------------------------------- -->
+<!-- 02 · The problem (0:20) ---------------------------------------------- -->
 <section class="slide" id="p-problem" data-title="The problem" data-field='{"shape":"rain","cols":[389,959,1529],"spread":110}'>
   <div class="inner">
     <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">01</span></span><h2 class="heading-1 split">The problem</h2></div>
@@ -41,10 +41,10 @@
       <div class="tile glass" data-step="3" data-in-style="scale"><span class="big glass"><i data-icon="file-dashed"></i></span><h3 class="heading-4">Proposals written<br>from scratch</h3></div>
     </div>
   </div>
-  <aside class="notes">[0:25] Today, a bid team watches public procurement portals by hand. (click) The knowledge it needs, CVs, past projects, tools, is scattered across folders. (click) And every proposal is written from scratch. The result: slow answers, and positioning that depends on who had time to dig.</aside>
+  <aside class="notes">[0:20] Today, a bid team watches procurement portals by hand. (click) The knowledge it needs, CVs, past projects, tools, is scattered across folders. (click) And every proposal is written from scratch. The result: slow answers.</aside>
 </section>
 
-<!-- 03 · The proposed solution (0:25) ------------------------------------ -->
+<!-- 03 · The proposed solution (0:20) ------------------------------------ -->
 <section class="slide" id="p-solution" data-title="The proposed solution" data-field='{"shape":"flow","pts":[[0,600],[300,592],[630,608],[960,592],[1290,608],[1620,592],[1920,600]],"spread":20}'>
   <div class="inner">
     <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">02</span></span><h2 class="heading-1 split">The proposed solution</h2></div>
@@ -58,7 +58,7 @@
     <span class="chev" style="left:1327px;top:504px" data-step="5" data-in-style="fade"><i data-icon="arrow-right"></i></span>
     <div class="pnode" data-x="1620" style="left:1492px;top:504px" data-step="5" data-in-style="scale"><span class="orb glass"><i data-icon="file-ppt"></i></span><span class="heading-5">Generate</span><span class="k">05</span></div>
   </div>
-  <aside class="notes">[0:25] OlivesoftBranch automates that in five steps. (click) Detect new tenders. (click) Research the buyer. (click) Compare every requirement with our own knowledge. (click) Then a person decides. (click) And only then do we generate the proposal. The human stays in control at the one step that matters.</aside>
+  <aside class="notes">[0:20] OliveBranch automates this in five steps. (click) Detect new tenders. (click) Research the buyer. (click) Compare each requirement with our own knowledge. (click) A person decides. (click) Only then do we generate the proposal.</aside>
 </section>
 
 <!-- 04 · Architecture (0:20) --------------------------------------------- -->
@@ -88,10 +88,10 @@
       </div>
     </div>
   </div>
-  <aside class="notes">[0:20] Three layers. (click) A Next.js interface on Vercel, which only displays results. (click) All the business logic lives in n8n, on Azure. (click) And a data and AI layer: Supabase for the database and private files, Qdrant for vectors, Gemini, DeepSeek and Tavily, our own PPTX and PDF renderer, and Canva.</aside>
+  <aside class="notes">[0:20] Three layers. (click) A Next.js interface on Vercel, which only displays results. (click) All the business logic lives in n8n, on Azure. (click) And a data and AI layer: Supabase, Qdrant for vectors, Gemini, DeepSeek and Tavily, our own PPTX and PDF renderer, and Canva.</aside>
 </section>
 
-<!-- 05 · The n8n workflow (0:30) ----------------------------------------- -->
+<!-- 05 · The n8n workflow (0:25) ----------------------------------------- -->
 <section class="slide" id="p-n8n" data-title="The n8n workflow" data-field='{"shape":"drift","alpha":0.32}'>
   <div class="inner">
     <div class="left">
@@ -104,14 +104,12 @@
     </div>
     <div class="capstack" style="left:664px;top:120px;width:1000px;height:700px" data-in="right">
       <figure class="cap" data-cap="N1" data-fallback="assets/workflows/07.svg" data-label="07_job_runner"><div class="media"><img alt="n8n canvas of workflow 07_job_runner"></div><figcaption><span class="caption-4">07_job_runner</span><b>n8n</b></figcaption></figure>
-      <figure class="cap" data-cap="N2" data-label="Workflow list"><div class="media"><img alt="n8n list of the 29 workflows"></div><figcaption><span class="caption-4">29 workflows</span><b>n8n</b></figcaption></figure>
-      <figure class="cap" data-cap="N3" data-label="Executions"><div class="media"><img alt="n8n executions list with successful runs"></div><figcaption><span class="caption-4">Executions</span><b>n8n</b></figcaption></figure>
     </div>
   </div>
-  <aside class="notes">[0:30] n8n is the heart of the system: twenty-nine workflows. This one is the job runner. Every minute it claims the next job from a durable queue in Postgres, with a lease, so two workers never take the same job. Each stage saves a checkpoint, and when something fails it retries automatically, up to three times, without redoing the work already done.</aside>
+  <aside class="notes">[0:25] n8n is the heart of the system: twenty-nine workflows. This one is the job runner. Every minute it claims the next job from a durable queue in Postgres, with a lease, so no job runs twice. If a stage fails, it retries up to three times, from its last checkpoint.</aside>
 </section>
 
-<!-- 06 · Collecting tenders (0:40) --------------------------------------- -->
+<!-- 06 · Collecting tenders (0:30) --------------------------------------- -->
 <section class="slide" id="p-collect" data-title="Collecting tenders" data-field='{"shape":"drift","alpha":0.32}'>
   <div class="inner">
     <div class="left">
@@ -127,13 +125,12 @@
     </div>
     <div class="capstack" style="left:860px;top:150px;width:804px;height:620px" data-in="right">
       <figure class="cap" data-cap="N4" data-fallback="assets/workflows/14.svg" data-label="14_opportunity_scan"><div class="media"><img alt="n8n canvas of workflow 14_opportunity_scan"></div><figcaption><span class="caption-4">14_opportunity_scan</span><b>n8n</b></figcaption></figure>
-      <figure class="cap" data-cap="S1" data-label="opportunity_candidates"><div class="media"><img alt="Supabase table opportunity_candidates"></div><figcaption><span class="caption-4">opportunity_candidates</span><b>Supabase</b></figcaption></figure>
     </div>
   </div>
-  <aside class="notes">[0:40] It starts with collection. Every morning at six, this workflow reads four official sources: TED, for Europe and France, and BOAMP, both through their APIs; Find a Tender, in the UK, through its OCDS API; and HAICOP, in Tunisia, which we scrape from its public pages. An LLM extracts the requirements, and we enforce one rule. (click) Every requirement must come with an exact quote from the notice, or it is dropped. The notice is treated as data, never as instructions. A notice with no deadline or no usable requirement is held for human review, never silently lost.</aside>
+  <aside class="notes">[0:30] Every morning at six, this workflow scans four official sources: TED and BOAMP through their APIs, Find a Tender in the UK through OCDS, and HAICOP in Tunisia, from its public pages. An LLM extracts the requirements, with one rule. (click) Each requirement needs an exact quote from the notice, or it is dropped.</aside>
 </section>
 
-<!-- 07 · RAG (0:55) ------------------------------------------------------ -->
+<!-- 07 · RAG (0:45) ------------------------------------------------------ -->
 <section class="slide" id="p-rag" data-title="Comparing with our knowledge base (RAG)" data-field='{"shape":"flow","pts":[[0,328],[247,328],[485,328],[722,328],[960,328],[1198,328],[1435,328],[1673,328],[1920,328]],"spread":14}'>
   <div class="inner">
     <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">06</span></span><h2 class="heading-2 split">Comparing with our knowledge base (RAG)</h2></div>
@@ -147,12 +144,7 @@
       <div class="dn last" style="left:1545px" data-in><span class="orb glass"><i data-icon="seal-check"></i></span><span class="title-3">LLM judgment + quote</span></div>
     </div>
     <div class="capstack" style="left:0;top:400px;width:1040px;height:440px" data-step="1" data-in-style="left">
-      <figure class="cap" data-cap="A2" data-fallback="assets/shots/A2-requirements.png" data-label="Requirement matrix"><div class="media"><img alt="OlivesoftBranch requirement matrix with a supported requirement and its CV quote"></div><figcaption><span class="caption-4">Requirement matrix · quote from the CV</span><b>OlivesoftBranch</b></figcaption></figure>
-      <figure class="cap" data-cap="S2" data-label="requirement_judgments"><div class="media"><img alt="Supabase table requirement_judgments"></div><figcaption><span class="caption-4">requirement_judgments</span><b>Supabase</b></figcaption></figure>
-      <figure class="cap" data-cap="Q1" data-label="olivesoft_knowledge"><div class="media"><img alt="Qdrant collection olivesoft_knowledge"></div><figcaption><span class="caption-4">olivesoft_knowledge · 768 dims · cosine</span><b>Qdrant</b></figcaption></figure>
-      <figure class="cap" data-cap="N5" data-fallback="assets/workflows/05.svg" data-label="05_requirement_matching"><div class="media"><img alt="n8n canvas of workflow 05_requirement_matching"></div><figcaption><span class="caption-4">05_requirement_matching</span><b>n8n</b></figcaption></figure>
-      <figure class="cap" data-cap="N6" data-fallback="assets/workflows/03.svg" data-label="03_knowledge_ingestion"><div class="media"><img alt="n8n canvas of workflow 03_knowledge_ingestion"></div><figcaption><span class="caption-4">03_knowledge_ingestion</span><b>n8n</b></figcaption></figure>
-      <figure class="cap" data-cap="A4" data-fallback="assets/shots/A4-knowledge.jpg" data-label="Knowledge base"><div class="media"><img alt="OlivesoftBranch knowledge base with indexed documents"></div><figcaption><span class="caption-4">Knowledge base</span><b>OlivesoftBranch</b></figcaption></figure>
+      <figure class="cap" data-cap="A2" data-fallback="assets/shots/A2-requirements.png" data-label="Requirement matrix"><div class="media"><img alt="OliveBranch requirement matrix with a supported requirement and its CV quote"></div><figcaption><span class="caption-4">Requirement matrix · quote from the CV</span><b>OliveBranch</b></figcaption></figure>
     </div>
     <div class="stats">
       <div class="stat glass" data-step="2" data-in-style="right"><span class="title-1">hit@5</span><b class="grad">1.00</b></div>
@@ -160,10 +152,10 @@
       <div class="stat glass" data-step="2" data-in-style="right"><span class="title-1">correct judgments</span><b class="mint"><span data-count="83">83</span>%</b></div>
     </div>
   </div>
-  <aside class="notes">[0:55] Then the core of the matching: RAG over our own knowledge. Every document, a CV, a project reference, a tech stack, is extracted, cut into chunks, turned into Gemini vectors and stored in Qdrant. For each requirement of the tender, we retrieve the top five passages, and an LLM judges it: supported, partial, unsupported or unknown, always with the quote that proves it. (click) Here, the requirement "Data Scientist role" is supported, and you can read the exact line from the CV. (click) We benchmarked it on labelled queries: hit at five is one point zero, recall at five is zero point eight three, and eighty-three percent of requirement judgments are correct. When the evidence is missing, the system says unknown. It never invents a qualification.</aside>
+  <aside class="notes">[0:45] Then the matching, with RAG over our own knowledge. Each document, a CV, a project, a tech stack, is extracted, chunked, turned into Gemini vectors and stored in Qdrant. For each requirement we retrieve the top five passages, and an LLM judges it, always with the quote that proves it. (click) Here, "Data Scientist role" is supported, with the exact line from the CV. (click) On our labelled benchmark: hit at five is one, recall at five is zero point eight three, and eighty-three percent of judgments are correct. When evidence is missing, it says unknown. It never invents a qualification.</aside>
 </section>
 
-<!-- 08 · Generating the presentation (0:30) ------------------------------ -->
+<!-- 08 · Generating the presentation (0:25) ------------------------------ -->
 <section class="slide" id="p-gen" data-title="Generating the presentation" data-field='{"shape":"drift","alpha":0.32}'>
   <div class="inner">
     <div class="left">
@@ -175,17 +167,13 @@
       </div>
     </div>
     <div class="capstack" style="left:680px;top:130px;width:984px;height:640px" data-in="right">
-      <figure class="cap" data-cap="F1" data-label="Generated PPTX slide"><div class="media"><img alt="Generated PowerPoint slide with a yellow field to complete"></div><figcaption><span class="caption-4">Generated PPTX · yellow field to complete</span><b>PowerPoint</b></figcaption></figure>
-      <figure class="cap" data-cap="deck-1" data-fallback="assets/shots/deck-1.png" data-label="Generated proposal"><div class="media"><img alt="Cover of a generated proposal for ASFINAG"></div><figcaption><span class="caption-4">Generated proposal · cover</span><b>PDF</b></figcaption></figure>
-      <figure class="cap" data-cap="deck-3" data-fallback="assets/shots/deck-3.png" data-label="Generated proposal"><div class="media"><img alt="Generated proposal page answering each requirement"></div><figcaption><span class="caption-4">Generated proposal · response per requirement</span><b>PDF</b></figcaption></figure>
-      <figure class="cap" data-cap="A5" data-label="Proposals view"><div class="media"><img alt="OlivesoftBranch proposals view with the PDF preview"></div><figcaption><span class="caption-4">Proposals view · PDF preview</span><b>OlivesoftBranch</b></figcaption></figure>
-      <figure class="cap" data-cap="N7" data-fallback="assets/workflows/19.svg" data-label="19_proposal_content"><div class="media"><img alt="n8n canvas of workflow 19_proposal_content with the two agents"></div><figcaption><span class="caption-4">19_proposal_content · the 2 agents</span><b>n8n</b></figcaption></figure>
+      <figure class="cap" data-cap="F1" data-fallback="assets/shots/deck-1.png" data-fb-caption="Generated proposal · cover" data-fb-tag="PDF" data-label="Generated PPTX slide"><div class="media"><img alt="Generated PowerPoint slide with a yellow field to complete"></div><figcaption><span class="caption-4">Generated PPTX · yellow field to complete</span><b>PowerPoint</b></figcaption></figure>
     </div>
   </div>
-  <aside class="notes">[0:30] When the team accepts an opportunity, two AI agents take over: a strategist plans the proposal, and a writer drafts it. Every claim is checked against its source before it can reach a slide. The renderer then produces a real, editable PowerPoint, and a PDF. Anything we cannot prove becomes a yellow field, for the team to complete.</aside>
+  <aside class="notes">[0:25] When the team accepts an opportunity, two AI agents take over: a strategist plans the proposal, and a writer drafts it. Every claim is checked against its source. The renderer then produces an editable PowerPoint and a PDF. Anything we cannot prove becomes a yellow field for the team to complete.</aside>
 </section>
 
-<!-- 09 · Editing in Canva (0:25) ----------------------------------------- -->
+<!-- 09 · Editing in Canva (0:20) ----------------------------------------- -->
 <section class="slide" id="p-canva" data-title="Editing in Canva" data-field='{"shape":"drift","alpha":0.32}'>
   <div class="inner">
     <div class="left">
@@ -200,12 +188,10 @@
       </div>
     </div>
     <div class="capstack" style="left:680px;top:130px;width:984px;height:640px" data-in="right">
-      <figure class="cap" data-cap="F2" data-label="Canva editor"><div class="media"><img alt="Canva editor with the imported proposal"></div><figcaption><span class="caption-4">Canva editor · imported proposal</span><b>Canva</b></figcaption></figure>
-      <figure class="cap" data-cap="A6" data-label="Modifier dans Canva"><div class="media"><img alt="OlivesoftBranch proposal panel with the Modifier dans Canva button"></div><figcaption><span class="caption-4">Modifier dans Canva</span><b>OlivesoftBranch</b></figcaption></figure>
-      <figure class="cap" data-cap="N8" data-fallback="assets/workflows/28.svg" data-label="28_canva"><div class="media"><img alt="n8n canvas of workflow 28_canva"></div><figcaption><span class="caption-4">28_canva</span><b>n8n</b></figcaption></figure>
+      <figure class="cap" data-cap="F2" data-fallback="assets/workflows/28.svg" data-fb-caption="28_canva" data-fb-tag="n8n" data-label="Canva editor"><div class="media"><img alt="Canva editor with the imported proposal"></div><figcaption><span class="caption-4">Canva editor · imported proposal</span><b>Canva</b></figcaption></figure>
     </div>
   </div>
-  <aside class="notes">[0:25] For the final polish, one click on "Modifier dans Canva" (click) imports the deck into Canva. (click) The team edits it there, with the tool it already knows, (click) and OlivesoftBranch detects the changes and syncs them back as a new version of the proposal.</aside>
+  <aside class="notes">[0:20] For the final polish, one click on "Modifier dans Canva". (click) The deck is imported into Canva, (click) the team edits it there, (click) and the changes sync back as a new version of the proposal.</aside>
 </section>
 
 <!-- 10 · Security (0:20) ------------------------------------------------- -->
@@ -220,38 +206,37 @@
       <div class="it glass" data-in><span class="icon"><i data-icon="quotes"></i></span><span class="heading-6">Quotes verified against prompt injection</span></div>
     </div>
     <span class="emblem glass" data-in="scale"><i data-icon="lock-simple"></i></span>
-    <div class="capstack" data-optional style="left:980px;top:150px;width:684px;height:600px" data-in="right">
-      <figure class="cap" data-cap="S4" data-label="Supabase policies"><div class="media"><img alt="Supabase row level security policies"></div><figcaption><span class="caption-4">Row Level Security</span><b>Supabase</b></figcaption></figure>
-      <figure class="cap" data-cap="S3" data-label="Private buckets"><div class="media"><img alt="Supabase private storage buckets"></div><figcaption><span class="caption-4">Private buckets</span><b>Supabase</b></figcaption></figure>
-    </div>
   </div>
-  <aside class="notes">[0:20] Security was built in from day one. API keys stay on the server. Every webhook is protected. Supabase enforces row level security. Files live in private storage, behind links that expire after sixty seconds. And every quote is verified against its source, so text injected into a web page cannot slip into a proposal.</aside>
+  <aside class="notes">[0:20] Security was built in from day one. API keys stay on the server, every webhook is protected, Supabase enforces row level security, and files sit in private storage behind sixty-second links. Quotes are verified against their source, so injected text cannot slip into a proposal.</aside>
 </section>
 
-<!-- 11 · Live demo (1:45) ------------------------------------------------ -->
+<!-- Demo film slide: removed for now (the 2-minute video is shown separately).
+     To bring it back, delete this comment's opening and closing lines. -->
+<!--
 <section class="slide" id="p-demo" data-title="Live demo" data-steps="1" data-field='{"shape":"drift","alpha":0.14}'>
   <div class="inner">
     <figure class="demo" data-in="scale" data-interactive>
-      <video class="demo-video" src="assets/demo/olivesoft-demo.mp4" poster="assets/demo/olivesoft-demo-poster.jpg" preload="none" playsinline controls aria-label="OlivesoftBranch demo: from login to an editable proposal"></video>
+      <video class="demo-video" src="assets/demo/olivesoft-demo.mp4" poster="assets/demo/olivesoft-demo-poster.jpg" preload="none" playsinline controls aria-label="OliveBranch demo: from login to an editable proposal"></video>
       <span class="demo-hint caption-3"><i data-icon="arrow-right"></i>Press → to play</span>
     </figure>
   </div>
   <aside class="notes">[1:45] Here is the live system, recorded on the production workspace. (click) The video plays with its own narration: login, the tenders found this morning, the requirement matrix with the CV quote, the research on the buyer, and the generated proposal with its PowerPoint, PDF and Canva exports. Plan B if the video fails: do the same walkthrough live.</aside>
 </section>
+-->
 
-<!-- 12 · Next steps and thank you (0:20) --------------------------------- -->
+<!-- 11 · Next steps and thank you (0:15) --------------------------------- -->
 <section class="slide" id="p-next" data-title="Next steps and thank you" data-field='{"shape":"mark","cx":1420,"cy":440,"h":520,"count":1200}'>
   <div class="inner">
-    <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">11</span></span><h2 class="heading-1 split">Next steps</h2></div>
+    <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">10</span></span><h2 class="heading-1 split">Next steps</h2></div>
     <div class="pts">
       <div class="pt glass" data-in><span class="n">01</span><span class="heading-6">OCR for scanned PDFs</span></div>
       <div class="pt glass" data-in><span class="n">02</span><span class="heading-6">Individual accounts and roles</span></div>
-      <div class="pt glass" data-in><span class="n">03</span><span class="heading-6">Evaluation on OlivesoftBranch's real CVs</span></div>
+      <div class="pt glass" data-in><span class="n">03</span><span class="heading-6">Evaluation on OliveSoft's real CVs</span></div>
       <div class="pt glass" data-in><span class="n">04</span><span class="heading-6">Monitoring and alerts</span></div>
     </div>
-    <div class="thanks" data-step="1" data-in-style="scale"><span class="display-2 grad">Thank you</span><span class="heading-5 muted">Intgrale IT · CSTAM 3.0</span></div>
+    <div class="thanks" data-step="1" data-in-style="scale"><span class="display-2 grad">Thank you</span><span class="heading-5 muted">Intégrale IT · CSTAM 3.0</span></div>
   </div>
-  <aside class="notes">[0:20] What comes next: OCR for scanned PDFs, individual accounts with roles, an evaluation on OlivesoftBranch's real CVs, and monitoring with alerts. (click) Thank you. We are happy to take your questions.</aside>
+  <aside class="notes">[0:15] Next: OCR for scanned PDFs, individual accounts with roles, an evaluation on OliveSoft's real CVs, and monitoring with alerts. (click) Thank you. We are happy to take your questions.</aside>
 </section>
 
 </main>

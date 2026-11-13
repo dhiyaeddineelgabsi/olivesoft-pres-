@@ -1,6 +1,6 @@
 # Olivesoft-Pres
 
-OlivesoftBranch · CSTAM 3.0 technical pitch deck (11 slides, plain HTML/CSS/JS, no build step).
+OliveBranch · CSTAM 3.0 technical pitch deck (11 slides, plain HTML/CSS/JS, no build step).
 
 ## Run locally
 ```bash

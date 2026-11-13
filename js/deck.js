@@ -1,4 +1,4 @@
-/* OlivesoftBranch deck engine. Classic script so index.html also works from file://. */
+/* OliveBranch deck engine. Classic script so index.html also works from file://. */
 (function () {
   "use strict";
   const stage = document.getElementById("stage");
