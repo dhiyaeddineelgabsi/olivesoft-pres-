@@ -145,15 +145,16 @@
     </div>
     <div class="capstack" style="left:142px;top:352px;width:1380px;height:440px" data-step="1" data-in-style="left">
       <figure class="cap" data-cap="A2" data-fallback="assets/shots/A2-requirements-card.png" data-label="Requirement matrix"><div class="media"><img alt="OliveBranch requirement matrix with a supported requirement and its CV quote"></div><figcaption><span class="caption-4">Requirement matrix · quote from the CV</span><b>OliveBranch</b></figcaption></figure>
+      <figure class="cap" data-cap="S2" data-label="Evaluation runs"><div class="media"><img alt="Supabase table rag_evaluation_runs: 35 hits out of 35 labelled queries"></div><figcaption><span class="caption-4">rag_evaluation_runs · 35 hits out of 35 queries</span><b>Supabase</b></figcaption></figure>
     </div>
     <div class="stats">
-      <div class="stat glass" data-step="2" data-in-style="scale"><b class="grad">29 / 29</b><span>Right document found in the top 5 results</span></div>
-      <div class="stat glass" data-step="2" data-in-style="scale"><b>20 / 24</b><span>Requirements judged correctly (83%)</span></div>
-      <div class="stat glass" data-step="2" data-in-style="scale"><b class="mint">Unknown</b><span>No evidence? It says so. It never invents a qualification.</span></div>
+      <div class="stat glass" data-step="2" data-in-style="scale"><b class="grad">35 / 35</b><span>Right document found in the top 5 results</span><small>Run 19385 · rag_evaluation_runs</small></div>
+      <div class="stat glass" data-step="2" data-in-style="scale"><b>20 / 24</b><span>Requirements judged correctly (83%)</span><small>Run 19301 · benchmark, 20 Oct</small></div>
+      <div class="stat glass" data-step="2" data-in-style="scale"><b class="mint">Unknown</b><span>No evidence? It says so. It never invents a qualification.</span><small>761 of 1,330 judged unknown or unsupported</small></div>
     </div>
-    <p class="stats-note body-2 muted" data-step="2" data-in-style="fade">Tested on 29 queries · 3 labelled tenders · 24 requirements</p>
+    <p class="stats-note body-2 muted" data-step="2" data-in-style="fade">Tested on 35 queries · 3 labelled tenders · 24 requirements</p>
   </div>
-  <aside class="notes">[0:45] Then the matching, with RAG over our own knowledge. Each document, a CV, a project, a tech stack, is extracted, chunked, turned into Gemini vectors and stored in Qdrant. For each requirement we retrieve the top five passages, and an LLM judges it, always with the quote that proves it. (click) Here, "Data Scientist role" is supported, with the exact line from the CV. (click) Then we tested it. On 29 questions, the right document is always in the top five. On 24 requirements from labelled tenders, twenty are judged correctly, that is 83 percent. And with no evidence, it says unknown. It never invents a qualification.</aside>
+  <aside class="notes">[0:45] Then the matching, with RAG over our own knowledge. Each document, a CV, a project, a tech stack, is extracted, chunked, turned into Gemini vectors and stored in Qdrant. For each requirement we retrieve the top five passages, and an LLM judges it, always with the quote that proves it. (click) Here, "Data Scientist role" is supported, with the exact line from the CV. (click) Then we tested it. On 35 questions, the right document is always in the top five. On 24 requirements from labelled tenders, twenty are judged correctly, that is 83 percent. And with no evidence, it says unknown. It never invents a qualification.</aside>
 </section>
 
 <!-- 08 · Generating the presentation (0:25) ------------------------------ -->
@@ -174,25 +175,25 @@
   <aside class="notes">[0:25] When the team accepts an opportunity, two AI agents take over: a strategist plans the proposal, and a writer drafts it. Every claim is checked against its source. The renderer then produces an editable PowerPoint and a PDF. Anything we cannot prove becomes a yellow field for the team to complete.</aside>
 </section>
 
-<!-- 09 · Editing in Canva (0:20) ----------------------------------------- -->
+<!-- 09 · Editing in Canva (0:25) ----------------------------------------- -->
 <section class="slide" id="p-canva" data-title="Editing in Canva" data-field='{"shape":"drift","alpha":0.32}'>
   <div class="inner">
-    <div class="left">
-      <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">08</span></span><h2 class="heading-1 split">Editing<br>in Canva</h2></div>
-      <span class="cbtn" data-in><i data-icon="paint-brush-broad"></i>Modifier dans Canva</span>
-      <div class="flow3">
-        <span class="st glass" data-step="1" data-in-style="left"><span class="icon"><i data-icon="upload-simple"></i></span><span class="title-1">Import</span></span>
-        <span class="ar" data-step="2" data-in-style="fade"><i data-icon="arrow-right"></i></span>
-        <span class="st glass" data-step="2" data-in-style="left"><span class="icon"><i data-icon="pencil-line"></i></span><span class="title-1">Edit</span></span>
-        <span class="ar" data-step="3" data-in-style="fade"><i data-icon="arrow-right"></i></span>
-        <span class="st glass" data-step="3" data-in-style="left"><span class="icon"><i data-icon="arrows-clockwise"></i></span><span class="title-1">Sync</span></span>
+    <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">08</span></span><h2 class="heading-1 split">Editing in Canva</h2></div>
+    <div class="rt">
+      <div class="rt-node glass" data-in><span class="orb"><i data-icon="file-ppt"></i></span><b class="heading-3">OliveBranch</b><span class="rt-sub">Generated PPTX + PDF</span><span class="rt-badge" data-step="2" data-in-style="scale"><i data-icon="check-circle"></i>New version</span></div>
+      <div class="rt-mid">
+        <div class="rt-lane" data-in><span class="cbtn"><i data-icon="paint-brush-broad"></i>Modifier dans Canva</span><i class="rt-arrow" data-icon="arrow-right"></i></div>
+        <div class="rt-lane back" data-step="2" data-in-style="fade"><i class="rt-arrow" data-icon="arrow-left"></i><span class="rt-chip glass"><i data-icon="arrows-clockwise"></i>Update from Canva</span></div>
       </div>
+      <div class="rt-node canva glass" data-in><span class="orb"><i data-icon="paint-brush-broad"></i></span><b class="heading-3">Canva</b><span class="rt-sub">Editor the team knows</span><span class="rt-badge" data-step="1" data-in-style="scale"><i data-icon="pencil-line"></i>Team edits here</span></div>
     </div>
-    <div class="capstack" style="left:820px;top:150px;width:844px;height:600px" data-in="right">
-      <figure class="cap" data-cap="F2" data-fallback="assets/workflows/28.svg" data-fb-caption="28_canva" data-fb-tag="n8n" data-label="Canva editor"><div class="media"><img alt="Canva editor with the imported proposal"></div><figcaption><span class="caption-4">Canva editor · imported proposal</span><b>Canva</b></figcaption></figure>
+    <div class="gs">
+      <div class="g glass" data-step="3" data-in-style="scale"><span class="icon"><i data-icon="lock-simple"></i></span><span class="heading-5">Files stay private</span></div>
+      <div class="g glass" data-step="3" data-in-style="scale"><span class="icon"><i data-icon="stack"></i></span><span class="heading-5">Old versions kept</span></div>
+      <div class="g glass" data-step="3" data-in-style="scale"><span class="icon"><i data-icon="list-checks"></i></span><span class="heading-5">Compliance review flagged to redo</span></div>
     </div>
   </div>
-  <aside class="notes">[0:20] For the final polish, one click on "Modifier dans Canva". (click) The deck is imported into Canva, (click) the team edits it there, (click) and the changes sync back as a new version of the proposal.</aside>
+  <aside class="notes">[0:25] For the final polish, one click on "Modifier dans Canva" opens the deck in the editor the team already knows. (click) The team edits it there. (click) One click brings the changes back as a new version. (click) Files stay private, old versions are kept, and the compliance review is flagged to be redone.</aside>
 </section>
 
 <!-- 10 · Security (0:20) ------------------------------------------------- -->
