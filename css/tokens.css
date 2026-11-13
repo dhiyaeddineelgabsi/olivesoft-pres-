@@ -23,10 +23,10 @@
   --brand: linear-gradient(100deg, #51e9b8 0%, #12d9c8 48%, #13a6da 100%);
 
   /* liquid-glass surface: translucent body + bright rim (padding-box / border-box trick) */
-  --glass-sheen: linear-gradient(160deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.02) 42%, rgba(255,255,255,0.05) 100%);
-  --glass-base: rgba(255,255,255,0.04);
-  --glass-rim: linear-gradient(150deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.08) 35%, rgba(255,255,255,0.03) 60%, rgba(255,255,255,0.28) 100%);
-  --glass-highlight: inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -18px 36px -24px rgba(255,255,255,0.18);
+  --glass-sheen: linear-gradient(rgba(24,24,24,0.96), rgba(24,24,24,0.96));
+  --glass-base: #181818;
+  --glass-rim: linear-gradient(150deg, rgba(81,233,184,0.5) 0%, rgba(255,255,255,0.1) 38%, rgba(255,255,255,0.06) 62%, rgba(18,217,200,0.34) 100%);
+  --glass-highlight: inset 0 0 0 0 transparent;
   --glass-blur: blur(28px) saturate(180%);
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);

@@ -36,7 +36,7 @@ OliveBranch automates this in five steps. *(click)* Detect new tenders. *(click)
 Three layers. *(click)* A Next.js interface on Vercel, which only displays results. *(click)* All the business logic lives in n8n, on Azure. *(click)* And a data and AI layer: Supabase, Qdrant for vectors, Gemini, DeepSeek and Tavily, our own PPTX and PDF renderer, and Canva.
 
 **5 · The n8n workflow (0:25)**
-n8n is the heart of the system: twenty-nine workflows. This one is the job runner. Every minute it claims the next job from a durable queue in Postgres, with a lease, so no job runs twice. If a stage fails, it retries up to three times, from its last checkpoint.
+n8n is the heart of the system: twenty-nine workflows, versioned in Git. This one is the job runner. Every minute it claims the next job from a durable queue in Postgres, with a lease, so no job runs twice. If a stage fails, it retries up to three times, from its last checkpoint.
 
 **6 · Collecting tenders (0:30)**
 Every morning at six, this workflow scans four official sources: TED and BOAMP through their APIs, Find a Tender in the UK through OCDS, and HAICOP in Tunisia, from its public pages. An LLM extracts the requirements, with one rule. *(click)* Each requirement needs an exact quote from the notice, or it is dropped.
@@ -45,7 +45,7 @@ Every morning at six, this workflow scans four official sources: TED and BOAMP t
 Then the matching, with RAG over our own knowledge. Each document, a CV, a project, a tech stack, is extracted, chunked, turned into Gemini vectors and stored in Qdrant. For each requirement we retrieve the top five passages, and an LLM judges it, always with the quote that proves it. *(click)* Here, "Data Scientist role" is supported, with the exact line from the CV.
 
 **8 · Does it work? We measured it (0:25)**
-Does it work? We measured it. Here is the evaluation stored in our database: 35 questions, 35 hits. *(click)* The right document is always in the top five. Twenty of 24 requirements are judged correctly, that is 83 percent. With no evidence, it says unknown: it never invents a qualification.
+Does it work? We measured it, on our test corpus of synthetic CVs and projects. Here is the evaluation stored in our database: 35 questions, 35 hits. *(click)* The right document is always in the top five. Twenty of 24 requirements are judged correctly, that is 83 percent. With no evidence, the answer is unknown, and every claim keeps its exact quote.
 
 **9 · Generating the presentation (0:25)**
 When the team accepts an opportunity, two AI agents take over: a strategist plans the proposal, and a writer drafts it. Every claim is checked against its source. The renderer then produces an editable PowerPoint and a PDF. Anything we cannot prove becomes a yellow field for the team to complete.

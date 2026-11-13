@@ -26,6 +26,8 @@
     <div class="meta" data-in>
       <div><span class="caption-4">Team</span><span class="title-1">Intégrale IT</span></div>
       <div><span class="caption-4">Event</span><span class="title-1">CSTAM 3.0</span></div>
+      <div><span class="caption-4">Mentors</span><span class="title-1">Khalil Masmoudi · Bilel Djemel</span></div>
+      <div><span class="caption-4">Challenge</span><span class="title-1">Automated RFP intelligence and proposal generation</span></div>
     </div>
   </div>
   <aside class="notes">[0:10] Good morning. We are team Intégrale IT, and this is OliveBranch: it takes a public tender and turns it into a commercial proposal, backed by evidence.</aside>
@@ -97,7 +99,7 @@
     <div class="left">
       <div class="ptitle"><span class="eyebrow caption-3" data-in><span class="num">04</span></span><h2 class="heading-1 split">The n8n<br>workflow</h2></div>
       <div class="kws">
-        <div class="kw glass" data-in><span class="icon"><i data-icon="tree-structure"></i></span><div><span class="num grad" data-count="29">29</span> <span class="heading-5">workflows</span></div></div>
+        <div class="kw glass" data-in><span class="icon"><i data-icon="tree-structure"></i></span><div><span class="num grad" data-count="29">29</span> <span class="heading-5">workflows in Git</span></div></div>
         <div class="kw glass" data-in><span class="icon"><i data-icon="queue"></i></span><span class="heading-5">Durable job queue</span></div>
         <div class="kw glass" data-in><span class="icon"><i data-icon="arrows-clockwise"></i></span><span class="heading-5">Automatic recovery</span></div>
       </div>
@@ -106,7 +108,7 @@
       <figure class="cap" data-cap="N1" data-fallback="assets/workflows/07.svg" data-label="07_job_runner"><div class="media"><img alt="n8n canvas of workflow 07_job_runner"></div><figcaption><span class="caption-4">07_job_runner</span><b>n8n</b></figcaption></figure>
     </div>
   </div>
-  <aside class="notes">[0:25] n8n is the heart of the system: twenty-nine workflows. This one is the job runner. Every minute it claims the next job from a durable queue in Postgres, with a lease, so no job runs twice. If a stage fails, it retries up to three times, from its last checkpoint.</aside>
+  <aside class="notes">[0:25] n8n is the heart of the system: twenty-nine workflows, versioned in Git. This one is the job runner. Every minute it claims the next job from a durable queue in Postgres, with a lease, so no job runs twice. If a stage fails, it retries up to three times, from its last checkpoint.</aside>
 </section>
 
 <!-- 06 · Collecting tenders (0:30) --------------------------------------- -->
@@ -160,11 +162,11 @@
     <div class="stats">
       <div class="stat glass" data-step="1" data-in-style="scale"><b class="grad">35 / 35</b><span>Right document found in the top 5 results</span><small>Run 19385 · rag_evaluation_runs</small></div>
       <div class="stat glass" data-step="1" data-in-style="scale"><b>20 / 24</b><span>Requirements judged correctly (83%)</span><small>Run 19301 · benchmark, 20 Oct</small></div>
-      <div class="stat glass" data-step="1" data-in-style="scale"><b class="mint">Unknown</b><span>No evidence? It says so. It never invents a qualification.</span><small>761 of 1,330 judged unknown or unsupported</small></div>
+      <div class="stat glass" data-step="1" data-in-style="scale"><b class="mint">No guess</b><span>No evidence? The answer is unknown.</span><small>Exact quote required, or the claim is dropped</small></div>
     </div>
-    <p class="stats-note body-2 muted" data-step="1" data-in-style="fade">Tested on 35 queries · 3 labelled tenders · 24 requirements</p>
+    <p class="stats-note body-2 muted" data-step="1" data-in-style="fade">Test corpus (synthetic documents) · 35 queries · 3 labelled tenders · 24 requirements</p>
   </div>
-  <aside class="notes">[0:25] Does it work? We measured it. Here is the evaluation stored in our database: 35 questions, 35 hits. (click) The right document is always in the top five. Twenty of 24 requirements are judged correctly, that is 83 percent. With no evidence, it says unknown: it never invents a qualification.</aside>
+  <aside class="notes">[0:25] Does it work? We measured it, on our test corpus of synthetic CVs and projects. Here is the evaluation stored in our database: 35 questions, 35 hits. (click) The right document is always in the top five. Twenty of 24 requirements are judged correctly, that is 83 percent. With no evidence, the answer is unknown, and every claim keeps its exact quote.</aside>
 </section>
 
 <!-- 09 · Generating the presentation (0:25) ------------------------------ -->

@@ -256,3 +256,10 @@
 #p-eval .stats { top: 250px; }
 #p-eval .stat { min-height: 400px; }
 #p-eval .stats-note { top: 690px; }
+
+/* Same look as the OliveBranch site: flat black stage, flat dark surfaces, mint / teal accents (no colored aurora) */
+#stage::after { display: none; }
+.glass .icon, .kw .icon, #p-security .it .icon, #p-canva .g .icon { background: #1f1f1f; }
+#s-title .meta { flex-wrap: wrap; row-gap: 26px; max-width: 1100px; }
+#s-title .meta div:nth-child(n+3) .title-1 { font-size: 28px; line-height: 34px; }
+#s-title .meta div:nth-child(4) { flex-basis: 100%; }
